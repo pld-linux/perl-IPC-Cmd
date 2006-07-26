@@ -6,35 +6,31 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	IPC
 %define		pnam	Cmd
-Summary:	perl(IPC::Cmd)
+Summary:	perl(IPC::Cmd) − finding and running system commands made easy
 Name:		perl-IPC-Cmd
 Version:	0.24
-Release:	0.1
-# note if it is "same as perl"
-License:	(enter GPL/LGPL/BSD/BSD-like/Artistic/other license name here)
+Release:	0.2
+# "same as perl"
+License:	GPLv1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9061bd187defad873432f91fa6de9f9b
-#Patch0:		%{name}
-# most of CPAN modules have generic URL (substitute pdir and pnam here)
-#URL:		http://search.cpan.org/dist/%{pdir}-%{pnam}
+URL:		http://search.cpan.org/dist/IPC-Cmd
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-#BuildRequires:	-
 %if %{with autodeps} && %{with tests}
 BuildRequires:	perl-Params-Check
-#BuildRequires:	perl-
+BuildRequires:	perl-Module-Load-Conditional
 %endif
-#Requires:	-
-#Provides:	-
-#Obsoletes:	-
-#BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-#%define		_noautoreq	'perl(anything_fake_or_conditional)'
-
 %description
-#%description -l pl
+Perl module IPC::Cmd allows you to run commands, interactively if desired,
+platform independent but have them still work.
+The "can_run" function can tell you if a certain binary is installed and if so
+where, whereas the "run" function can actually execute any of the commands you
+give it and give you a clear return value, as well as adhere to your verbosity
+settings.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

@@ -19,7 +19,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 URL:		http://search.cpan.org/dist/IPC-Cmd
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with autodeps} && %{with tests}
+%if %{with autodeps} || %{with tests}
 BuildRequires:	perl-Module-Load-Conditional
 BuildRequires:	perl-Params-Check
 %endif

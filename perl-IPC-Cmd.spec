@@ -7,7 +7,7 @@
 %define		pdir	IPC
 %define		pnam	Cmd
 Summary:	IPC::Cmd - finding and running system commands made easy
-Summary(pl):	IPC::Cmd - ³atwe znajdowanie i uruchamianie poleceñ systemowych
+Summary(pl.UTF-8):   IPC::Cmd - Å‚atwe znajdowanie i uruchamianie poleceÅ„ systemowych
 Name:		perl-IPC-Cmd
 Version:	0.24
 Release:	0.2
@@ -34,14 +34,14 @@ and if so where, whereas the "run" function can actually execute any
 of the commands you give it and give you a clear return value, as well
 as adhere to your verbosity settings.
 
-%description -l pl
-Modu³ Perla IPC::Cmd pozwala uruchamiaæ polecenia, w razie potrzeby
-interaktywnie, w sposób niezale¿ny od platformy.
+%description -l pl.UTF-8
+ModuÅ‚ Perla IPC::Cmd pozwala uruchamiaÄ‡ polecenia, w razie potrzeby
+interaktywnie, w sposÃ³b niezaleÅ¼ny od platformy.
 
-Funkcja "can_run" jest w stanie odpowiedzieæ, czy dany program jest
-zainstalowany i gdzie, natomiast funkcja "run" potrafi uruchomiæ
-dowolne zadane polecenie i przekazaæ zwrócon± warto¶æ, uwzglêdniaj±c
-ustawienia "gadatliwo¶ci".
+Funkcja "can_run" jest w stanie odpowiedzieÄ‡, czy dany program jest
+zainstalowany i gdzie, natomiast funkcja "run" potrafi uruchomiÄ‡
+dowolne zadane polecenie i przekazaÄ‡ zwrÃ³conÄ… wartoÅ›Ä‡, uwzglÄ™dniajÄ…c
+ustawienia "gadatliwoÅ›ci".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

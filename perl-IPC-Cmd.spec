@@ -14,9 +14,9 @@ Release:	0.2
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IPC/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fe97b70d363e1b69cb635086d90dcee4
-URL:		http://search.cpan.org/dist/IPC-Cmd
+URL:		http://search.cpan.org/dist/IPC-Cmd/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}

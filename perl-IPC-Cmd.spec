@@ -9,13 +9,13 @@
 Summary:	IPC::Cmd - finding and running system commands made easy
 Summary(pl.UTF-8):	IPC::Cmd - łatwe znajdowanie i uruchamianie poleceń systemowych
 Name:		perl-IPC-Cmd
-Version:	0.24
+Version:	0.40
 Release:	0.2
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9061bd187defad873432f91fa6de9f9b
+# Source0-md5:	fe97b70d363e1b69cb635086d90dcee4
 URL:		http://search.cpan.org/dist/IPC-Cmd
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
